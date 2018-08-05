@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <component-scan base-package="com.rockbb.jshadow.web.controller" />
+
+    <interceptors>
+        <bean class="com.rockbb.jshadow.web.interceptor.GlobalInterceptor" />
+        <bean class="com.rockbb.jshadow.web.interceptor.SessionInterceptor" />
+    </interceptors>
+
+    <constant name="encoding" value="UTF-8" type="string" />
+    <constant name="templates_path" value="/template" type="string" />
+
+</beans>
